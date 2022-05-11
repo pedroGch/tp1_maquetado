@@ -1,4 +1,61 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+} 
+header{
+  width: 100%;
+  height: 50px;
+  background-color: #061635;
+  background-image: url("../imagenes/icono-blanco.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+header nav {
+  max-width: 80%;
+}
+
+
+
+header nav ul{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+header nav ul li{
+  list-style: none;
+  margin-right: 15px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+main{
+  width: 1200px;
+  background-color:#a2b3d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 80vh;
+  background-image: url("../imagenes/opera-mod-1200x450.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+}
+
+section h1{
+  color: #fff;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #40578a;
+  color: #fff;
 }
