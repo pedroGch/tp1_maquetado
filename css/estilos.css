@@ -1,28 +1,42 @@
+:root{
+  --deep-blue: #002f6c;
+  --blue: #01579b; 
+  --light-blue: #bbdefb; 
+}
+
 *{
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
 } 
+
 header{
   width: 100%;
-  height: 50px;
-  background-color: #061635;
-  background-image: url("../imagenes/icono-blanco.png");
+  height: 120px;
+  background-color: var(--deep-blue);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
+  position: sticky;
+  top: 0;
+}
+
+#logo {
+  padding: 15px 15px 15px 50px;  
+  width: 150px;
+  display: inline-block;
 }
 
 header nav {
   max-width: 80%;
+
 }
-
-
 
 header nav ul{
   display: flex;
   align-items: flex-end;
   justify-content: end;
+ 
 }
 
 header nav ul li{
@@ -30,32 +44,135 @@ header nav ul li{
   margin-right: 15px;
   color: #fff;
   margin-top: 15px;
+  
 }
+header nav ul li:hover{
+  text-decoration: underline;
+}
+
+header nav ul li:hover #sub-menu{
+  display: block;
+}
+
+
+#sub-menu{
+  display: none;
+}
+
+
 
 main{
   width: 1200px;
-  background-color:#a2b3d5;
-  display: flex;
+  background-color: #FFF;
+  /*display: flex;*/
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   height: 80vh;
-  background-image: url("../imagenes/opera-mod-1200x450.png");
+
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  overflow: auto;
+  /*opacity: 0.6;*/
+}
+
+main p{
+  padding: 20px;
+}
+
+#inicio{
+  background-image: url("../imagenes/fondo-inicio.jpg");
+  height: 600px;
+}
+
+h1, h2{
+  padding: 40px 20px 20px 20px;
+  font-size: 40px;
+}
+
+h3 {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.img-centrada{
+  text-align: center;
+}
+
+figcaption{
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+}
+
+.fig-max-width{
+  width: 700px;
 }
 
 section h1{
-  color: #fff;
+  color: var(--deep-blue);
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#seccion-autores{
+  margin-top: 50px;
+  text-align: center;
+  background-color: var(--light-blue);
+}
+
+#instituciones-culturales{
+  background-color: var(--light-blue);
+}
+
+.autor {
+  display: inline-block;
+  padding: 40px;
+}
+
+footer {
+  /*display: flex;*/
+  /*justify-content: center;
+  align-items: center;*/
   width: 100%;
   height: 150px;
-  background-color: #40578a;
+  background-color: var(--blue);
   color: #fff;
+  position: absolute;
+  
 }
+
+footer ul {
+  display: inline-block;
+}
+
+footer p, ul {
+  display: inline-block;
+}
+
+.logo-davinci, .datos-tp {
+  display: inline-block;
+  float: left;
+  padding: 20px;
+}
+
+.lista-sin-estilo {
+  list-style: none;
+ }
+
+ .hiperv-sin-estilo{
+   text-decoration: none;
+   color: #FFF;
+ }
+
+ #alineado-derecha {
+   float: right;
+   display: inline-block;
+   padding: 20px;
+   text-align: right;
+ }
+
+ #datos-tp {
+   display: inline-block;
+   float: left;
+   padding: 30px;
+  
+ }
