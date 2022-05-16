@@ -44,6 +44,7 @@ header nav ul{
   display: flex;
   align-items: flex-end;
   justify-content: end;
+  position: relative;
 }
 
 header nav ul li{
@@ -63,10 +64,19 @@ header nav ul li:hover{
   text-decoration: underline;
 }
 
-
-
 #sub-menu{
+  position: absolute;
+  background-color: var(--deep-blue);
   display: none;
+}
+
+#sub-menu li a {
+  display: block;
+  padding: 10px;
+}
+
+.menu li:hover #sub-menu{
+  display: block;
 }
 
 main{
@@ -109,18 +119,19 @@ main p{
 
 #principal{
   color: #fff;
+  margin-left: -60px;
+  text-align: center;
+  padding: 0;
 }
 
 #texto-principal{
   width: 44%;
   height: 250px;
-  margin-top: 25px;
-  color: #fff;
-  border: 1px solid rgba(0, 47, 108, 0.88); 
+  margin-top: -13px;
+  color: var(--deep-blue);
   padding: 40px;
-  background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(0,47,108,0.8) 100%);
-  border-radius:3px ;
-  text-align: justify;
+  text-align: center;
+  font-weight: 600;
 }
 
 h1, h2{
