@@ -89,7 +89,7 @@ header nav ul li:hover{
 }
 
 main{
-  width: 1200px;
+  width: 1240px;
   background-color: #FFF;
   align-items: center;
   justify-content: center;
@@ -147,15 +147,19 @@ main p{
 h1, h2{
   padding: 40px 20px 20px 20px;
   font-size: 40px;
+  text-align: center;
 }
 
 h3 {
   padding: 20px;
   font-size: 30px;
+  text-align: center;
+  color: var(--deep-blue);
 }
 
 .img-centrada{
   text-align: center;
+  margin: auto;
 }
 
 figcaption{
@@ -178,9 +182,7 @@ section h1{
   background-color: var(--light-blue);
 }
 
-#instituciones-culturales{
-  background-color: var(--light-blue);
-}
+
 
 .autor {
   display: inline-block;
@@ -237,14 +239,18 @@ footer p, ul {
  /* SECCION INSTITUCIONES CULTURALES*/
 
  .h3-centrado {
-   text-align: center;
-   color: var(--deep-blue);
-   padding-top: 30px;
- }
+  text-align: center;
+  color: var(--deep-blue);
+  padding-top: 30px;
+}
 
- .titulo-oculto{
+.titulo-oculto{
    display: none;
  }
+#instituciones-culturales {
+  background-color: var(--light-blue);
+  /*margin-top: 50px;*/
+}
 
 #p-inst-culturales{
   padding-left: 90px;
@@ -340,13 +346,42 @@ footer p, ul {
    color: var(--deep-blue);
  }
 
+ .font-blanca-cent {
+   text-align: center;
+   color: #fff;
+ }
  
- #columna-1, #columna-2 {
+ .columna-1, .columna-2 {
    display: inline-block;
    float: left;
    width: 600px;
- }
+   margin-bottom: 50px;
+}
+
+ .columna-2-banner {
+  display: inline-block;
+  float: left;
+  width: 525px;
+  height: 700px;
+  background-image: url("../imagenes/banner-azul.png");
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  padding-right: 30px;
+}
 
  .img-ubic-historia {
-   padding: 90px 50px 50px 30px;
+   padding: 50px 50px 50px 30px;
  }
+
+ .img-geografia {
+  padding: 50px 50px 50px 50px;
+}
+
+.strong-sin-estilos {
+  font-weight: normal;
+}
+
+#boton-volver-arriba {
+  text-align: right;
+padding: 20px;
+}
