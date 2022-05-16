@@ -27,17 +27,26 @@ header{
   background-position: left;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 #logo {
-  padding: 15px 15px 15px 50px;  
+  padding: 15px 15px 15px 50px;
   width: 150px;
   display: inline-block;
+  margin-left: 16%;
+}
+
+#logo img{
+  width: 95px;
 }
 
 header nav {
   max-width: 80%;
-
+  display: inline-block;
+  margin-left: 35%;
+  vertical-align: top;
+  margin-top: 30px;
 }
 
 header nav ul{
@@ -111,10 +120,11 @@ main p{
 
 #welcome{
   color: #fff;
-  background:rgba(0, 47, 108, 0.88);
+  background:rgba(0, 47, 108, 1);
   clip-path: polygon(8% 0, 100% 0%, 94% 100%, 0% 100%);
   padding-left: 50px;
   width: 50%;
+  z-index: -1;
 }
 
 #principal{
