@@ -160,6 +160,8 @@ h3 {
 .img-centrada{
   text-align: center;
   margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 figcaption{
@@ -351,16 +353,22 @@ footer p, ul {
  }
 
  #bandera-idioma-demografia{
-  height: 850px;
+  height: 750px;
+  margin-top: 50px;
  }
 
  #instituciones-culturales{
-  height: 600px;
+  height: 630px;
  }
 
  #geografia-clima{
-  height: 600px;
+  height: 680px;
+  background-color: var(--light-blue);
  }
+
+#laopera{
+  margin-top: 20px;
+}
 
  .font-blanca-cent {
    text-align: center;
